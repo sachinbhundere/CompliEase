@@ -22,6 +22,7 @@ import { RouterModule } from '@angular/router';
         { path: 'policies', data: { breadcrumb: 'Policies' }, loadChildren: () => import('./policies/policies.module').then(m => m.PoliciesModule) },
         { path: 'assessments', data: { breadcrumb: 'Assessments' }, loadChildren: () => import('./assessments/assessments.module').then(m => m.AssessmentsModule) },
         { path: 'tasks', data: { breadcrumb: 'Tasks' }, loadChildren: () => import('./tasks/tasks.module').then(m => m.TasksModule) },
+        { path: 'compliance', data: { breadcrumb: 'Compliance' }, loadChildren: () => import('./compliance/compliance.module').then(m => m.ComplianceModule) },
         { path: '**', redirectTo: '/notfound' }
     ])],
     exports: [RouterModule]

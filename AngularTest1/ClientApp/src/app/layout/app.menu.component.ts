@@ -33,7 +33,7 @@ export class AppMenuComponent implements OnInit {
                     { label: 'Policies', icon: 'pi pi-fw pi-circle', routerLink: ['/uikit/policies'] },
                     { label: 'Tasks', icon: 'pi pi-fw pi-circle', routerLink: ['/uikit/tasks'] },
                     { label: 'Assessments', icon: 'pi pi-fw pi-circle', routerLink: ['/uikit/assessments'] },
-                    { label: 'Compliance', icon: 'pi pi-fw pi-list', routerLink: ['/uikit/list'] },
+                    { label: 'Compliance', icon: 'pi pi-fw pi-list', routerLink: ['/uikit/compliance'] },
                     // { label: 'Tree', icon: 'pi pi-fw pi-share-alt', routerLink: ['/uikit/tree'] },
                     // { label: 'Panel', icon: 'pi pi-fw pi-tablet', routerLink: ['/uikit/panel'] },
                     // { label: 'Overlay', icon: 'pi pi-fw pi-clone', routerLink: ['/uikit/overlay'] },

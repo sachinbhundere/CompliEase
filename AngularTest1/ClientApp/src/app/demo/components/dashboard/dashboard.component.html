@@ -13,8 +13,22 @@
                 <span  class="text-green-500 flex align-items-center justify-content-center" style="font-size: 5rem;">8.9</span>
                 <!-- <span class="text-500">since last visit</span> -->
             </div>
+            <div class="card mb-0" style="margin-top: 2rem; margin-bottom: 2rem; min-height: 138px;">
+                <div class="flex justify-content-between mb-3">
+                    <div>
+                        <h5>Open Tasks</h5>
+                        <!-- <span class="block text-900 font-large mb-3">Open Tasks</span> -->
+                        <div class="text-500 font-small">                       </div>
+                    </div>
+                    <!-- <div class="flex align-items-center justify-content-center bg-purple-100 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                        <i class="pi pi-comment text-purple-500 text-xl"></i>
+                    </div> -->
+                </div>
+                <!-- <span class="text-green-500 font-medium">85 </span>
+                <span class="text-500">responded</span> -->
+            </div>
         </div>
-        <div class="col-6">
+        <div class="col-8">
             <div class="card">
                 <div class="flex justify-content-between align-items-center mb-5">
                     <h5>Compliance</h5>
@@ -26,7 +40,7 @@
                 <ul class="list-none p-0 m-0">
                     <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                         <div>
-                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">CMMS Level 1</span>
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">CMMC Level 1</span>
                             <div class="mt-1 text-600">0 controls left</div>
                         </div>
                         <div class="mt-2 md:mt-0 flex align-items-center">
@@ -60,7 +74,7 @@
                             <span class="text-pink-500 ml-3 font-medium">%95</span>
                         </div>
                     </li>
-                    <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                    <!-- <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                         <div>
                             <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Wonders Notebook</span>
                             <div class="mt-1 text-600">Office</div>
@@ -71,8 +85,8 @@
                             </div>
                             <span class="text-green-500 ml-3 font-medium">%35</span>
                         </div>
-                    </li>
-                    <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                    </li> -->
+                    <!-- <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                         <div>
                             <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Mat Black Case</span>
                             <div class="mt-1 text-600">Accessories</div>
@@ -95,7 +109,7 @@
                             </div>
                             <span class="text-teal-500 ml-3 font-medium">%40</span>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
                 <div class="grid">
                     <div class="col-6">
@@ -103,69 +117,54 @@
                             label="View Questionnaire" class="p-button-outlined p-button-secondary"></button> -->
                     </div>
                     <div class="col-6" style="align-items: flex-end;">
-                        <span style="margin-top: 2rem"></span>
-                        <button class="align-right" style="margin-top: 2rem;" pButton pRipple  type="button"
-                            label="View Overview" class="p-button-outlined p-button-primary"></button>
+                        <span style="margin-top: 0rem"></span>
+                        <button class="align-right" style="margin-top: 0rem;" pButton pRipple  type="button"
+                          routerLink="/uikit/compliance"  label="View Overview" class="p-button-outlined p-button-primary"></button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-12 lg:col-6 xl:col-3">
+        <!-- <div class="col-12 lg:col-6 xl:col-3">
             <div class="card mb-0">
                 <div class="flex justify-content-between mb-3">
                     <div><h5>Attacker's View</h5>
-                        <!-- <span class="block text-900 font-large mb-3">AttackViewers </span> -->
 
                         <div class="text-500 font-small ">Discover if you have vulnerabilities that need to be addressed</div>
                     </div>
-                    <!-- <div class="flex align-items-center justify-content-center bg-cyan-100 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
-                        <i class="pi pi-inbox text-cyan-500 text-xl"></i>
-                    </div> -->
                 </div>
 
-                    <!-- <span style="margin-top: 2rem"></span> -->
                     <button class="align-right" style="margin-top: 2rem;" pButton pRipple  type="button"
                         label="Run Scan" class="p-button-outlined p-button-primary"></button>
 
             </div>
-        </div>
-        <div class="col-12 lg:col-6 xl:col-3">
+        </div> -->
+        <!-- <div class="col-12 lg:col-6 xl:col-3">
             <div class="card mb-0">
                 <div class="flex justify-content-between mb-3">
                     <div><h5>Risk Analysis</h5>
-                        <!-- <span class="block text-900 font-large mb-3">AttackViewers </span> -->
 
                         <div class="text-500 font-small ">Data Leak</div>
                     </div>
-                    <!-- <div class="flex align-items-center justify-content-center bg-cyan-100 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
-                        <i class="pi pi-inbox text-cyan-500 text-xl"></i>
-                    </div> -->
+
                 </div>
 
-                    <!-- <span style="margin-top: 2rem"></span> -->
                     <p-knob class="text-center  d-flex" [(ngModel)]="value" valueTemplate="{value}"></p-knob>
                     <div class="text-center text-green-500" style="margin-top: 0;  font-size: small;  font-weight: 700;">
                         Very Good
                     </div>
 
             </div>
-        </div>
-        <div class="col-12 lg:col-6 xl:col-3">
+        </div> -->
+        <!-- <div class="col-12 lg:col-6 xl:col-3">
             <div class="card mb-0">
                 <div class="flex justify-content-between mb-3">
                     <div>
                         <h5>Open Tasks</h5>
-                        <!-- <span class="block text-900 font-large mb-3">Open Tasks</span> -->
-                        <div class="text-500 font-small">Veryfying hosted websire security</div>
+                       <div class="text-500 font-small">                       </div>
                     </div>
-                    <!-- <div class="flex align-items-center justify-content-center bg-purple-100 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
-                        <i class="pi pi-comment text-purple-500 text-xl"></i>
-                    </div> -->
                 </div>
-                <!-- <span class="text-green-500 font-medium">85 </span>
-                <span class="text-500">responded</span> -->
             </div>
-        </div>
+        </div> -->
 
         <div class="col-12 xl:col-6">
             <!-- <div class="card">
@@ -216,7 +215,7 @@
                     </li>
                     <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                         <div>
-                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Portal Sticker</span>
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">High</span>
                             <div class="mt-1 text-600">Accessories</div>
                         </div>
                         <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
@@ -228,7 +227,7 @@
                     </li>
                     <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                         <div>
-                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Supernova Sticker</span>
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Medium</span>
                             <div class="mt-1 text-600">Accessories</div>
                         </div>
                         <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
@@ -240,7 +239,7 @@
                     </li>
                     <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                         <div>
-                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Wonders Notebook</span>
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Low</span>
                             <div class="mt-1 text-600">Office</div>
                         </div>
                         <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
@@ -250,30 +249,7 @@
                             <span class="text-green-500 ml-3 font-medium">%35</span>
                         </div>
                     </li>
-                    <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
-                        <div>
-                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Mat Black Case</span>
-                            <div class="mt-1 text-600">Accessories</div>
-                        </div>
-                        <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
-                            <div class="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" [ngStyle]="{height: '8px'}">
-                                <div class="bg-purple-500 h-full" [ngStyle]="{width: '75%'}"></div>
-                            </div>
-                            <span class="text-purple-500 ml-3 font-medium">%75</span>
-                        </div>
-                    </li>
-                    <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
-                        <div>
-                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Robots T-Shirt</span>
-                            <div class="mt-1 text-600">Clothing</div>
-                        </div>
-                        <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
-                            <div class="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" [ngStyle]="{height: '8px'}">
-                                <div class="bg-teal-500 h-full" [ngStyle]="{width: '40%'}"></div>
-                            </div>
-                            <span class="text-teal-500 ml-3 font-medium">%40</span>
-                        </div>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -281,12 +257,12 @@
         <div class="col-12 xl:col-6">
             <div class="card">
                 <div class="card flex flex-column align-items-center">
-                    <h5 class="text-left w-full">Radar Chart</h5>
+                    <h5 class="text-left w-full">Scores Profile</h5>
                     <p-chart type="radar" [data]="radarData" [options]="radarOptions"></p-chart>
                 </div>
             </div>
 
-            <div class="card">
+            <!-- <div class="card">
                 <div class="flex align-items-center justify-content-between mb-4">
                     <h5>Notifications</h5>
                     <div>
@@ -330,7 +306,7 @@
                         <span class="text-900 line-height-3">Jane Davis<span class="text-700"> has posted a new questions about your product.</span></span>
                     </li>
                 </ul>
-            </div>
+            </div> -->
 
             <!-- <div class="px-4 py-5 shadow-2 flex flex-column md:flex-row md:align-items-center justify-content-between mb-3" [ngStyle]="{borderRadius: '1rem', background: 'linear-gradient(0deg, rgba(0, 123, 255, 0.5), rgba(0, 123, 255, 0.5)), linear-gradient(92.54deg, #1C80CF 47.88%, #FFFFFF 100.01%)'}">
            <div>

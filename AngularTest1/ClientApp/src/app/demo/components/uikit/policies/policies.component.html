@@ -1,139 +1,383 @@
 <div class="grid">
-    <div class="col-12 md:col-6">
+    <div class="col-12 md:col-4">
         <div class="card">
             <div class="flex">
                 <div>
                     <h5 style="font-size: 1.5rem;font-weight: 700;">Access</h5>
-                    <div class="m-0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-                        consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum
-                        nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-                        quas!</div>
-                </div>
-                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
-                    <p-chip label="9.7"></p-chip>
+                    <div class="m-0"> This policy outlines the restrictions and authorizations for all other company
+                        resources, information processing assets, and company information.</div>
                 </div>
             </div>
-            <div class="grid">
-                <div class="col-6">
-                    <div style="margin: 1rem;">Task Progress</div>
-                    <p-progressBar [value]="50"></p-progressBar>
-                </div>
-                <div class="col-6" style="align-items: flex-end;">
-                    <span style="margin-top: 2rem"></span>
-                    <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
-                        label="View Policy" class="p-button-outlined p-button-secondary"></button>
+            <span style="margin-top: 2rem"></span>
+            <button class="align-right" style="margin-top: 2rem;" pButton pRipple  type="button"
+            (click)="op.toggle($event);viewDoc('Access')"   label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Active Directory</h5>
+                    <div class="m-0"> This policy offers instructions for setting up the secure configuration of
+                        Microsoft Active Directory on-premise.</div>
                 </div>
             </div>
+             <span style="margin-top: 2rem"></span>
+            <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
+                label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+        <!-- </div> -->
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Asset Management</h5>
+                    <div class="m-0"> This policy guarantees that technology assets are correctly managed for the
+                        duration of the asset's life.</div>
+                </div>
+
+            </div>
+            <span style="margin-top: 2rem"></span>
+            <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
+                label="View Policy" class="p-button-outlined p-button-secondary"></button>
         </div>
 
         <div class="card">
             <div class="flex">
                 <div>
                     <h5 style="font-size: 1.5rem;font-weight: 700;">Awareness</h5>
-                    <div class="m-0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-                        consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum
-                        nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-                        quas!</div>
+                    <div class="m-0"> This policy protects the information security of the organization by mandating
+                        cybersecurity awareness training and educating staff members from every department.</div>
                 </div>
-                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
-                    <p-chip label="9.7"></p-chip>
-                </div>
+
             </div>
-            <div class="grid">
-                <div class="col-6">
-                    <div style="margin: 1rem;">Task Progress</div>
-                    <p-progressBar [value]="50"></p-progressBar>
-                </div>
-                <div class="col-6" style="align-items: flex-end;">
-                    <span style="margin-top: 2rem"></span>
-                    <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
-                        label="View Policy" class="p-button-outlined p-button-secondary"></button>
-                </div>
-            </div>
+             <span style="margin-top: 2rem"></span>
+            <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
+                label="View Policy" class="p-button-outlined p-button-secondary"></button>
         </div>
+
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Business Continuity</h5>
+                    <div class="m-0"> This policy offers instructions, resources, and protocols that enable a business
+                        to weather a cyberattack and resume regular business activities.</div>
+                </div>
+
+            </div>
+            <span style="margin-top: 2rem"></span>
+            <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
+                label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Change and Configuration Management</h5>
+                    <div class="m-0"> The Change and Configuration Management policy is meant to help business and IT
+                        leadership handle change in a proactive manner while preserving system integrity.</div>
+                </div>
+
+            </div>
+             <span style="margin-top: 2rem"></span>
+            <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
+                label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Cloud Security</h5>
+                    <div class="m-0"> The objective of this policy is to improve the security of cloud environments and
+                        SaaS platforms by lowering the risk of cyberattacks and protecting data.</div>
+                </div>
+
+            </div>
+             <span style="margin-top: 2rem"></span>
+            <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
+                label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Compliance and Auditing</h5>
+                    <div class="m-0"> This policy outlines the steps involved in identifying, creating, managing
+                        proactively, and maintaining the company's cybersecurity compliance plan.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Data Protection</h5>
+                    <div class="m-0"> This policy aims to set a baseline for safeguarding private or sensitive
+                        information that your business possesses.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Domain and DNS</h5>
+                    <div class="m-0"> The domain and DNS policy serves the objective of lowering the likelihood of
+                        cyberattacks on these assets by giving the business appropriate security guidelines for each.
+                    </div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Email and Messages</h5>
+                    <div class="m-0"> This policy sets forth guidelines for how business email accounts and electronic
+                        messaging are used, configured, and protected.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+
+
+
+
     </div>
 
-
-    <div class="col-12 md:col-6">
+    <div class="col-12 md:col-4">
         <div class="card">
             <div class="flex">
                 <div>
-                    <h5 style="font-size: 1.5rem;font-weight: 700;">Title</h5>
-                    <div class="m-0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-                        consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum
-                        nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-                        quas!</div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Incident Response</h5>
+                    <div class="m-0"> This policy lays out the roles, duties, steps, and protocols for looking into
+                        security events and data breaches and responding to them.</div>
                 </div>
-                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
-                    <p-chip label="9.7"></p-chip>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="col-6">
-                    <div style="margin: 1rem;">Task Progress</div>
-                    <p-progressBar [value]="50"></p-progressBar>
-                </div>
-                <div class="col-6" style="align-items: flex-end;">
-                    <span style="margin-top: 2rem"></span>
-                    <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
-                        label="View Policy" class="p-button-outlined p-button-secondary"></button>
-                </div>
-            </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
         </div>
 
         <div class="card">
             <div class="flex">
                 <div>
-                    <h5 style="font-size: 1.5rem;font-weight: 700;">Title</h5>
-                    <div class="m-0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-                        consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum
-                        nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-                        quas!</div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Information Security Management</h5>
+                    <div class="m-0"> This policy specifies management accountability and requirements,
+                        as well as the steps for an information security plan and framework.</div>
                 </div>
-                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
-                    <p-chip label="9.7"></p-chip>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="col-6">
-                    <div style="margin: 1rem;">Task Progress</div>
-                    <p-progressBar [value]="50"></p-progressBar>
-                </div>
-                <div class="col-6" style="align-items: flex-end;">
-                    <span style="margin-top: 2rem"></span>
-                    <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
-                        label="View Policy" class="p-button-outlined p-button-secondary"></button>
-                </div>
-            </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
         </div>
 
         <div class="card">
             <div class="flex">
                 <div>
-                    <h5 style="font-size: 1.5rem;font-weight: 700;">Title</h5>
-                    <div class="m-0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-                        consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum
-                        nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-                        quas!</div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Logging and Monitoring</h5>
+                    <div class="m-0"> This policy prevents suspicious system events from turning into attacks
+                        by giving the business best practices for documenting and producing proof of such events.</div>
                 </div>
-                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
-                    <p-chip label="9.7"></p-chip>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="col-6">
-                    <div style="margin: 1rem;">Task Progress</div>
-                    <p-progressBar [value]="50"></p-progressBar>
-                </div>
-                <div class="col-6" style="align-items: flex-end;">
-                    <span style="margin-top: 2rem"></span>
-                    <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
-                        label="View Policy" class="p-button-outlined p-button-secondary"></button>
-                </div>
-            </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
         </div>
+        <!-- </div> -->
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Microsoft 365</h5>
+                    <div class="m-0"> This policy offers prescriptive guidelines for setting up a
+                        secure configuration posture for any operating system-based Microsoft 365 SaaS service.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">On-Premises Network</h5>
+                    <div class="m-0"> This policy establishes best practices for safeguarding company-owned
+                        network equipment and communication channels that are housed and operated on corporate property.
+                    </div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">On-Premises Server</h5>
+                    <div class="m-0"> This policy lays out guidelines for setting up, maintaining,
+                        and installing secure servers on the corporate network.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Operations and Maintenance</h5>
+                    <div class="m-0"> The purpose of the Operations and Maintenance policy is to ensure that due
+                        diligence
+                        is performed by properly maintaining assets across the organization as well as to ensure
+                        resource management addresses security requirements, capacity, performance limitations,
+                        and to ensure the business can maintain situational awareness of current and future performance.
+                    </div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Passwords and Secrets</h5>
+                    <div class="m-0"> This policy lays out guidelines for making secure passwords and using them wisely
+                        to increase cybersecurity.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Physical Infrastructure</h5>
+                    <div class="m-0"> This policy will provide guidelines about the physical security measures that a
+                        corporation implements are crucial to its overall security posture.
+                        Personnel and company assets can be safeguarded with the appropriate actions.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Privacy</h5>
+                    <div class="m-0"> The privacy policy provides guidance for legal compliance on how to protect PII
+                        that has been gathered. It ensures that private data is handled securely and protected.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Remote Access</h5>
+                    <div class="m-0"> This policy offers security protocols and instructions to guarantee
+                        that remote workers are informed about and protected from cyberattacks.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+
+
+
     </div>
 
+    <div class="col-12 md:col-4">
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Hosted Network</h5>
+                    <div class="m-0"> This policy protects networks hosted by the company. It controls how services,
+                        apps, and Wi-Fi connections are configured and kept up to date.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Hosted Server</h5>
+                    <div class="m-0"> This policy provides guidelines for installing, configuring, and maintaining
+                        secure servers.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Human Resources</h5>
+                    <div class="m-0"> This policy gives HR and IT the best practices for protecting data by implementing
+                        security measures before hiring, during the onboarding process, and after a role change or
+                        termination.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Threat Intelligence</h5>
+                    <div class="m-0"> This policy sets guidelines for threat intelligence lifecycle management,
+                        enabling effective threat identification, analysis, and response.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Vulnerability Management</h5>
+                    <div class="m-0"> This policy provides guidance on how to establish processes that will help in
+                        discovering
+                        vulnerabilities in the company network and assests.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Website and Web Application</h5>
+                    <div class="m-0"> This policy offers security guidelines for websites and online apps
+                        that are accessible to the public on behalf of your organization.
+                        Adhering to these recommendations will lower the likelihood that cyberattacks targeting these
+                        resources will be effective.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Endpoints and Mobile Devices</h5>
+                    <div class="m-0"> This policy guarantees the security of the data processed and stored on corporate
+                        endpoints
+                        and mobile devices, as well as the prevention of attacks on other company resources by
+                        preventing endpoints
+                        and mobile devices from serving as entry points.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Environmental Control</h5>
+                    <div class="m-0"> The policy's main objective is to offer direction for safeguarding IT assets.
+                        Adhering to this guideline is going to lessen the likelihood of any physical harm.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Risk Management</h5>
+                    <div class="m-0"> This policy lays out the requirements for creating a strategy that addresses risk
+                        assessment, mitigation, and monitoring.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Service Provider and Vendor Management</h5>
+                    <div class="m-0"> The policy's goal is to create and implement an assessment of vendors and service
+                        providers
+                        who handle sensitive data and are in charge of company-critical IT platforms or processes.
+                        It also aims to make sure that these providers are adequately safeguarding the platforms and
+                        data.</div>
+                </div>
+                </div><span style="margin-top: 2rem"></span><button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button" label="View Policy" class="p-button-outlined p-button-secondary"></button>
+        </div>
+    </div>
     <!-- <div class="col-12">
         <div class="card">
             <h5>Advanced</h5>
@@ -166,3 +410,9 @@
         </div>
     </div> -->
 </div>
+<p-overlayPanel [dismissable]="true" [showCloseIcon]="true" [style]="{'min-width': '900px', 'height': '500px'}" #op>
+    <div class="p-col d-flex">
+        <iframe class="col" *ngIf="ID" id="doc" [src]="docURL()" style="height:  calc(100vh); padding: 0px; width: 900px;"></iframe>
+
+     </div>
+</p-overlayPanel>

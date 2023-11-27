@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { PoliciesRoutingModule } from './policies-routing.module';
+import { QuestionsRoutingModule } from './questions-routing.module';
 import { AutoCompleteModule } from "primeng/autocomplete";
 import { CalendarModule } from "primeng/calendar";
 import { ChipsModule } from "primeng/chips";
@@ -12,18 +12,15 @@ import { CascadeSelectModule } from "primeng/cascadeselect";
 import { MultiSelectModule } from "primeng/multiselect";
 import { InputTextareaModule } from "primeng/inputtextarea";
 import { InputTextModule } from "primeng/inputtext";
-import { PoliciesComponent } from './policies.component';
-import { CardModule } from 'primeng/card';
-import { ChipModule } from 'primeng/chip';
-import { ProgressBarModule } from 'primeng/progressbar';
-import { ButtonModule } from 'primeng/button';
-import { OverlayPanelModule } from 'primeng/overlaypanel';
+import { QuestionsComponent } from './questions.component';
+import { TableModule } from 'primeng/table';
+import { RadioButtonModule } from 'primeng/radiobutton';
 
 @NgModule({
 	imports: [
 		CommonModule,
 		FormsModule,
-		PoliciesRoutingModule,
+		QuestionsRoutingModule,
 		AutoCompleteModule,
 		CalendarModule,
 		ChipsModule,
@@ -34,12 +31,9 @@ import { OverlayPanelModule } from 'primeng/overlaypanel';
 		MultiSelectModule,
 		InputTextareaModule,
 		InputTextModule,
-        CardModule,
-        ChipModule,
-        ProgressBarModule,
-        ButtonModule,
-        OverlayPanelModule
+        TableModule,
+        RadioButtonModule
 	],
-	declarations: [PoliciesComponent]
+	declarations: [QuestionsComponent]
 })
-export class PoliciesModule { }
+export class QuestionssModule { }

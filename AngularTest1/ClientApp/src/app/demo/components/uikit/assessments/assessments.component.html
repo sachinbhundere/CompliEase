@@ -1,13 +1,10 @@
 <div class="grid">
-    <div class="col-12 md:col-6">
+    <div class="col-4 md:col-4">
         <div class="card">
             <div class="flex">
                 <div>
                     <h5 style="font-size: 1.5rem;font-weight: 700;">Onboarding</h5>
-                    <div class="m-0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-                        consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum
-                        nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-                        quas!</div>
+                    <div class="m-0"> Answering this onboarding questionnaire will allow to determine which cybersecurity policies are relevant to your company.</div>
                 </div>
                 <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
                     <p-badge [value]="'✓'" severity="success"></p-badge>
@@ -15,13 +12,11 @@
             </div>
             <div class="grid">
                 <div class="col-6">
-                    <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
-                        label="View Questionnaire" class="p-button-outlined p-button-secondary"></button>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
                 </div>
                 <div class="col-6" style="align-items: flex-end;">
                     <span style="margin-top: 2rem"></span>
-                    <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
-                        label="Retake ->" class="p-button-outlined p-button-secondary"></button>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
                 </div>
             </div>
         </div>
@@ -29,11 +24,8 @@
         <div class="card">
             <div class="flex">
                 <div>
-                    <h5 style="font-size: 1.5rem;font-weight: 700;">Onboarding</h5>
-                    <div class="m-0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-                        consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum
-                        nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-                        quas!</div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Access</h5>
+                    <div class="m-0"> Company assets should be protected against any foreign or malicious access.</div>
                 </div>
                 <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
                     <p-badge [value]="'✓'" severity="success"></p-badge>
@@ -41,28 +33,228 @@
             </div>
             <div class="grid">
                 <div class="col-6">
-                    <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
-                        label="View Questionnaire" class="p-button-outlined p-button-secondary"></button>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
                 </div>
                 <div class="col-6" style="align-items: flex-end;">
                     <span style="margin-top: 2rem"></span>
-                    <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
-                        label="Retake ->" class="p-button-outlined p-button-secondary"></button>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
                 </div>
             </div>
         </div>
+    <!-- </div> -->
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Active Directory</h5>
+                    <div class="m-0"> Network access and user authentication are better protected when the Active Directory infrastructure is secure.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Asset Management</h5>
+                    <div class="m-0"> Identification of corporate assets that store or handle sensitive information,
+					as well as the identification of security concerns, depend on the management of technology assets.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Awareness</h5>
+                    <div class="m-0"> Employees that receive awareness training are more likely to have a
+					culture of security and are encouraged to take safe actions when faced with online threats.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Business Continuity</h5>
+                    <div class="m-0"> The business can recover damaged systems or lost data with the help of a well-defined recovery plan.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Change and Configuration Management</h5>
+                    <div class="m-0"> The Change and Configuration Management policy aims to preserve
+					system integrity and enable proactive change management by business and IT leadership.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Cloud Security</h5>
+                    <div class="m-0"> Cloud services need to be monitored to guarantee that business assets and data are protected.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Compliance and Auditing</h5>
+                    <div class="m-0"> The Compliance and Auditing policy aims to outline the steps involved in
+					identifying, creating, managing proactively, and maintaining the company's cybersecurity compliance plan.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Data Protection</h5>
+                    <div class="m-0"> Requirements for the management, storage, and safe disposal of sensitive data are part of data protection, as are classification criteria.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Domain and DNS</h5>
+                    <div class="m-0"> Denial-of-Service attacks, network traffic rerouting, and DNS traffic
+					tapping can all be prevented using domain and DNS protection.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 
-
-    <div class="col-12 md:col-6">
+    <div class="col-12 md:col-4"> <!--column 2-->
         <div class="card">
             <div class="flex">
                 <div>
-                    <h5 style="font-size: 1.5rem;font-weight: 700;">Onboarding</h5>
-                    <div class="m-0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-                        consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum
-                        nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-                        quas!</div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Human Resources</h5>
+                    <div class="m-0"> Employees are important to cybersecurity because they can be
+					simple targets for nefarious actions like social engineering attacks.</div>
                 </div>
                 <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
                     <p-badge [value]="'✓'" severity="success"></p-badge>
@@ -70,13 +262,11 @@
             </div>
             <div class="grid">
                 <div class="col-6">
-                    <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
-                        label="View Questionnaire" class="p-button-outlined p-button-secondary"></button>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
                 </div>
                 <div class="col-6" style="align-items: flex-end;">
                     <span style="margin-top: 2rem"></span>
-                    <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
-                        label="Retake ->" class="p-button-outlined p-button-secondary"></button>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
                 </div>
             </div>
         </div>
@@ -84,11 +274,9 @@
         <div class="card">
             <div class="flex">
                 <div>
-                    <h5 style="font-size: 1.5rem;font-weight: 700;">Onboarding</h5>
-                    <div class="m-0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-                        consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum
-                        nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-                        quas!</div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Incident Response</h5>
+                    <div class="m-0"> A well-organized incident response plan minimizes the harm that an attack does,
+					lowers the likelihood of similar incidents in the future, and enables prompt attack identification.</div>
                 </div>
                 <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
                     <p-badge [value]="'✓'" severity="success"></p-badge>
@@ -96,13 +284,11 @@
             </div>
             <div class="grid">
                 <div class="col-6">
-                    <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
-                        label="View Questionnaire" class="p-button-outlined p-button-secondary"></button>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
                 </div>
                 <div class="col-6" style="align-items: flex-end;">
                     <span style="margin-top: 2rem"></span>
-                    <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
-                        label="Retake ->" class="p-button-outlined p-button-secondary"></button>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
                 </div>
             </div>
         </div>
@@ -110,11 +296,9 @@
         <div class="card">
             <div class="flex">
                 <div>
-                    <h5 style="font-size: 1.5rem;font-weight: 700;">Onboarding</h5>
-                    <div class="m-0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-                        consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum
-                        nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-                        quas!</div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Information Security Management</h5>
+                    <div class="m-0"> The first step in effectively managing cyber threats is to manage
+					information security and risks within a cyber management framework.</div>
                 </div>
                 <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
                     <p-badge [value]="'✓'" severity="success"></p-badge>
@@ -122,18 +306,459 @@
             </div>
             <div class="grid">
                 <div class="col-6">
-                    <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
-                        label="View Questionnaire" class="p-button-outlined p-button-secondary"></button>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
                 </div>
                 <div class="col-6" style="align-items: flex-end;">
                     <span style="margin-top: 2rem"></span>
-                    <button class="align-right" style="margin-top: 2rem;" pButton pRipple disabled="true" type="button"
-                        label="Retake ->" class="p-button-outlined p-button-secondary"></button>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
                 </div>
             </div>
         </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Logging and Monitoring</h5>
+                    <div class="m-0"> Processes such as logging and system event monitoring must be carefully
+					designed and set up in order to identify, produce evidence of, and respond promptly to security threats.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Microsoft 365</h5>
+                    <div class="m-0"> It is necessary to carefully configure the Microsoft Office 365 services
+					and applications in accordance with manufacturer recommendations.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">On-Premises Network</h5>
+                    <div class="m-0"> Communication channels that are housed and operated on corporate property
+					should be set up carefully to prevent data breaches or leaks.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">On-Premises Server</h5>
+                    <div class="m-0"> One of the primary targets for cyberattacks is thought to be on-premises servers.
+					Businesses using on-premises servers ought to configure their systems according to best practices.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Operational and Maintenance</h5>
+                    <div class="m-0"> The purpose of the Operations and Maintenance policy is to ensure
+					the business can maintain situational awareness of current and future performance.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Passwords and Secrets</h5>
+                    <div class="m-0"> The resources of a company are frequently accessed through passwords.
+					Creating strong passwords and using them correctly are crucial to defending the business from brute-force attacks.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Physical Infrastructure</h5>
+                    <div class="m-0"> Maintaining the safety of an organization's physical infrastructure affects the overall security posture.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Privacy</h5>
+                    <div class="m-0"> The privacy policy's goal is to preserve gathered PII
+					by guaranteeing its safe management, legal compliance, and protection of personal data.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
+    <div class="col-12 md:col-4">
 
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Email and Messages</h5>
+                    <div class="m-0"> It is essential to safeguard company communications, accounts,
+					and email systems against phishing, social engineering, and potential data leaks.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Endpoints and Mobile Devices</h5>
+                    <div class="m-0"> Preventing hackers from gaining access to user data or other company assets
+					requires securing company workstations.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Environmental Control</h5>
+                    <div class="m-0"> Environmental controls define and prohibit unlawful access to firm facilities and physical assets.
+					They also guard against theft, damage, and loss of physical assets.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Hosted Network</h5>
+                    <div class="m-0"> Means of communication managed by hosting services should be well configured to avoid data leaks or breaches.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Hosted Server</h5>
+                    <div class="m-0"> Hosted servers are considered one of the main targets for cyberattacks.
+					Organizations using hosting server services should follow best practices configuration.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Threat Intelligence</h5>
+                    <div class="m-0"> Effective threat lifecycle management is made possible by this policy,
+					which also supports detection, analysis, and reaction. It consists of organized methods
+					for information gathering, processing, and sharing.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Vulnerability Management</h5>
+                    <div class="m-0"> Verifying that security rules are correctly and successfully implemented
+					across all enterprise systems depends on vulnerability assessment.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+		<div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Website</h5>
+                    <div class="m-0"> Due to their internet exposure, websites and web apps are vulnerable
+					to being misused or tampered with by malicious parties if they are not well secured.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Service Provider and Vendor Management</h5>
+                    <div class="m-0"> Given that so many businesses in today's world rely on third parties
+					for data management and IT infrastructure, security evaluation of service providers is essential.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Remote Access</h5>
+                    <div class="m-0"> As more workers work from home and remote access grows,
+					businesses must contend with new cyberthreats.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="flex">
+                <div>
+                    <h5 style="font-size: 1.5rem;font-weight: 700;">Risk Management</h5>
+                    <div class="m-0"> To make sure that risks are identified, given priority,
+					and appropriately managed, a risk management program is essential.</div>
+                </div>
+                <div class="flex justify-content-center align-right" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <p-badge [value]="'✓'" severity="success"></p-badge>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <button class="align-right" style="margin-top: 2rem; max-width: 120px; max-height: 50px;" pButton pRipple  type="button" size="small"    label="View Questionnaire" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+                <div class="col-6" style="align-items: flex-end;">
+                    <span style="margin-top: 2rem"></span>
+                    <button class="align-right" style="margin-top: 2rem; max-width: 80px; max-height: 50px;" pButton pRipple  type="button" label="Retake" class="p-button-outlined p-button-secondary"  routerLink="/uikit/questions"></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <!-- <div class="col-12">
         <div class="card">
             <h5>Advanced</h5>

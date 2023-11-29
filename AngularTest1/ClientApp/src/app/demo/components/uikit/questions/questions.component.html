@@ -1,25 +1,25 @@
 <div class="col-12">
     <div class="card">
         <div class="grid">
-            <!-- <div class="col-2" >
-                <div style="margin: 10rem; ">
-                    <p-button icon="pi pi-arrow-left" styleClass="p-button-rounded p-button-secondary p-button-outlined"></p-button>
+            <div   class="col-2" >
+                <div *ngIf="!leftDisabled" style="margin-left: 2rem; margin-right: 2rem; margin-top: 10rem">
+                    <p-button (click)="switchQuestion('Previous')" icon="pi pi-arrow-left" styleClass="p-button-rounded p-button-secondary p-button-outlined"></p-button>
                 </div>
-            </div> -->
+            </div>
             <div class="col-6">
-                <h3>1. How many computer users do you have?</h3>
+                <h3>{{Questions[qIndex].question}}</h3>
                 <div style="margin-top: 3rem;"></div>
                 <div class="flex flex-column gap-3">
-                    <div *ngFor="let category of categories" class="field-checkbox">
+                    <div *ngFor="let category of Questions[qIndex].options" class="field-checkbox">
                         <p-radioButton [inputId]="category.key" name="category" [value]="category"
                             [(ngModel)]="selectedCategory"></p-radioButton>
                         <label [for]="category.key" class="ml-2">{{ category.name }}</label>
                     </div>
                 </div>
             </div>
-            <div class="col-1" >
+            <div  *ngIf="!rightDisabled" class="col-1" >
                 <div style="margin: 10rem; ">
-                    <p-button icon="pi pi-arrow-right" styleClass="p-button-rounded p-button-secondary p-button-outlined"></p-button>
+                    <p-button (click)="switchQuestion('Next')"  icon="pi pi-arrow-right" styleClass="p-button-rounded p-button-secondary p-button-outlined"></p-button>
                 </div>
             </div>
         </div>

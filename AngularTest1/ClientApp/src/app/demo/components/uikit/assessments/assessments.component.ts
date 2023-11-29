@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { NavigationExtras, Router } from '@angular/router';
 
 @Component({
     templateUrl: './assessments.component.html'
 })
 export class AssessmentsComponent {
-
+    constructor(private router: Router) { }
     selectedState: any = null;
 
     states: any[] = [
@@ -28,5 +29,10 @@ export class AssessmentsComponent {
     city1: any = null;
 
     city2: any = null;
+
+    test(card){
+        const navigationExtras: NavigationExtras = {state: {example: card}};
+          this.router.navigate(['/uikit/questions'], navigationExtras);
+      }
 
 }

@@ -1,5 +1,6 @@
 ﻿using ConsoleApp6.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AngularTest1.Controllers
 {
@@ -37,10 +38,14 @@ namespace AngularTest1.Controllers
 
             var context = new CompliContext();
             
-            ConsoleApp6.Models.Task[] sfasdf = context.Tasks.Where(t => t.Ids != null).ToArray();
+            
+         var sfasdf = context.Tasks.Where(t => t.Id != input.Id).FirstOrDefault();
+            sfasdf.Ids = 1;
+
+            context.Entry(sfasdf).State = EntityState.Modified;
 
 
-            return sfasdf;
+            return null;
         }
     }
 

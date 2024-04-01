@@ -14,6 +14,17 @@ namespace AngularTest1.Controllers
             _context = context;
         }
 
+        [HttpGet]
+        public Tasks Gets()
+        {
+           var fjhfhj =  new Tasks
+            {
+                ID = 1,
+                Name = Random.Shared.Next(-20, 55).ToString(),
+                Score = null // Summaries[Random.Shared.Next(Summaries.Length)]
+            };
 
+            return fjhfhj;
+        }
     }
 }

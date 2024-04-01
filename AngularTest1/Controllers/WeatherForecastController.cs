@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ConsoleApp6.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace AngularTest1.Controllers
 {
@@ -9,7 +10,7 @@ namespace AngularTest1.Controllers
         private static readonly string[] Summaries = new[]
         {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+        };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
@@ -19,15 +20,33 @@ namespace AngularTest1.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public ConsoleApp6.Models.Task[] Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+            
+                var context = new CompliContext();
+
+                ConsoleApp6.Models.Task[] sfasdf = context.Tasks.Where(t=> t.Ids != null).ToArray();
+
+
+            return sfasdf;
         }
+
+        [HttpPost]
+        public ConsoleApp6.Models.Task[] Post(saveAns input)
+        {
+
+            var context = new CompliContext();
+            
+            ConsoleApp6.Models.Task[] sfasdf = context.Tasks.Where(t => t.Ids != null).ToArray();
+
+
+            return sfasdf;
+        }
+    }
+
+    public class saveAns
+    {
+        public int Id { get; set; }
+        public string Key { get; set; }
     }
 }

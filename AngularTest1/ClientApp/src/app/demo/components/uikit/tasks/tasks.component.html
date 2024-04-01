@@ -181,7 +181,7 @@
           <td>
             <p-tableCheckbox [value]="rowData" (click)="onChange()"></p-tableCheckbox>
           </td>
-          <td *ngFor="let col of columns" style="font-size: 12px;white-space: pre-wrap;">
+          <td *ngFor="let col of columns" style="font-size: 12px;">
             {{rowData[col.field]}}
           </td>
         </tr>

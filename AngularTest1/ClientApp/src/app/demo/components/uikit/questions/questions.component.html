@@ -12,7 +12,8 @@
                 <div class="flex flex-column gap-3">
                     <div *ngFor="let category of Questions[qIndex].options" class="field-checkbox">
                         <p-radioButton [inputId]="category.key" name="category" [value]="category"
-                            [(ngModel)]="selectedCategory"></p-radioButton>
+                            [(ngModel)]="selectedCategory" (click)="ans()"></p-radioButton>
+                            <!-- <p-checkbox name="category" [value]="category" [(ngModel)]="selectedCategories" [inputId]="category.key"></p-checkbox> -->
                         <label [for]="category.key" class="ml-2">{{ category.name }}</label>
                     </div>
                 </div>

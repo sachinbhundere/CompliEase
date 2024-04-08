@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 namespace AngularTest1.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    //[Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -21,17 +21,19 @@ namespace AngularTest1.Controllers
         }
 
         [HttpGet]
+        [Route("GetTaskList")]
         public ConsoleApp6.Models.Task[] Get()
         {
             
                 var context = new CompliContext();
 
-                ConsoleApp6.Models.Task[] sfasdf = context.Tasks.Where(t=> t.Ids != null).ToArray();
+                ConsoleApp6.Models.Task[] sfasdf = context.Tasks.Where(t=> t.IsAnswered != null && t.IsAnswered != 0).ToArray();
 
 
             return sfasdf;
         }
 
+        [Route("SaveAnswer")]
         [HttpPost]
         public ConsoleApp6.Models.Task[] Post(saveAns input)
         {
@@ -39,19 +41,22 @@ namespace AngularTest1.Controllers
             var context = new CompliContext();
             
             
-         var sfasdf = context.Tasks.Where(t => t.Id != input.Id).FirstOrDefault();
-            sfasdf.Ids = 1;
+         var sfasdf = context.Tasks.Where(t => t.Id == input.AnsID).FirstOrDefault();
+            if (sfasdf != null)
+            {
+                sfasdf.IsAnswered = 1;
 
-            context.Entry(sfasdf).State = EntityState.Modified;
+                context.Entry(sfasdf).State = EntityState.Modified;
 
-
+            }
             return null;
         }
     }
 
     public class saveAns
     {
-        public int Id { get; set; }
-        public string Key { get; set; }
+        public int AnsID { get; set; }
     }
-}
+
+
+    }

@@ -5,6 +5,7 @@ import { Table } from 'primeng/table';
 import { Customer } from 'src/app/demo/api/customer';
 import { Product } from 'src/app/demo/api/product';
 import { CustomerService } from 'src/app/demo/service/customer.service';
+import { EventService } from 'src/app/demo/service/event.service';
 import { ProductService } from 'src/app/demo/service/product.service';
 
 @Component({
@@ -12,7 +13,7 @@ import { ProductService } from 'src/app/demo/service/product.service';
 })
 export class QuestionsComponent implements OnInit {
     example: string;
-    constructor(private router: Router, private http: HttpClient) {
+    constructor(private router: Router, private http: HttpClient, private events: EventService) {
         const navigation = this.router.getCurrentNavigation();
         const state = navigation.extras.state as { example: string };
         this.example = state.example;
@@ -3098,16 +3099,23 @@ export class QuestionsComponent implements OnInit {
 
     }
 
-    ans(){
-        console.log(this.selectedCategory)
-        //this.http.post<any[]>('/WeatherForecast').subscribe(result => {
-          
-        //    result.forEach(element => {
-        //        this.tableData.push(element);
-        //    });
-        //    console.log(result);
-        //}, error => console.error(error));
-}
+    ans() {
+        console.log(this.selectedCategory.ID)
+       
+        console.log('ans');
+
+        this.http.post<any>('/SaveAnswer', this.selectedCategory.ID).subscribe(result => {
+            
+           
+            console.log(result);
+        }, error => console.error(error));
+        console.log('ans2');
+      //  this.events.saveAns(this.selectedCategory.ID)
+
+    
+    }
+
+
     switchQuestion(Direction) {
         if (Direction == 'Next') {
             this.qIndex = this.qIndex + 1
@@ -3125,11 +3133,5 @@ export class QuestionsComponent implements OnInit {
             this.rightDisabled = true
         }
     }
-
-
-
-
-
-
 
 }

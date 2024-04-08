@@ -25,7 +25,7 @@ export class TasksComponent implements OnInit{
     }
     ngOnInit() {
         this.tableData = [];
-        this.http.get<any[]>('/WeatherForecast').subscribe(result => {
+        this.http.get<any[]>('/GetTaskList').subscribe(result => {
             this.forecasts = result;
         result.forEach(element => {
 this.tableData.push(element);

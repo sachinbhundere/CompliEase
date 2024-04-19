@@ -25,7 +25,7 @@ export class QuestionsComponent implements OnInit {
     leftDisabled: boolean = true;
     rightDisabled: boolean = false;
     qIndex: number = 0;
-
+    answers: Array<any>;;
     Questions: any[] = null;
     //add questions based on the card heading in following json array
     categories: any[] = [
@@ -3090,21 +3090,53 @@ export class QuestionsComponent implements OnInit {
     ngOnInit() {
         //  this.selectedCategory = this.categories[1];
         // console.log(this.example);
+        this.http.get<any[]>('/GetAnswers').subscribe(result => {
+            this.answers = [];
+            result.forEach(element => {
+                this.answers.push(element);
+            });
+            console.log(this.answers);
+        }, error => console.error(error));
+
+        //this.categories.forEach(element => {
+        //    element.questions.forEach(dat => {
+        //        dat.options.foreach(ans => {
+        //            if (this.answers.includes(ans.ID)) {
+
+        //            }
+        //        })
+        //    })
+        //})
+
+        
+
         this.categories.forEach(element => {
             if (element.card == this.example) {
                 this.Questions = [];
+
                 this.Questions = element.questions
             }
         });
 
+        this.Questions.forEach(dat => {
+            dat.options.foreach(ans => {
+                if (this.answers.includes(ans.ID)) {
+                    this.selectedCategory = ans;
+                }
+            })
+        })
+
+
     }
 
     ans() {
-        console.log(this.selectedCategory.ID)
+        console.log(this.selectedCategory)
        
         console.log('ans');
 
-        this.http.post<any>('/SaveAnswer', this.selectedCategory.ID).subscribe(result => {
+        this.http.post<any>('/SaveAnswer',
+            { AnsID :   this.selectedCategory.ID }
+        ).subscribe(result => {
             
            
             console.log(result);
@@ -3132,6 +3164,15 @@ export class QuestionsComponent implements OnInit {
         } else {
             this.rightDisabled = true
         }
+
+        this.Questions.forEach(dat => {
+            dat.options.foreach(ans => {
+                if (this.answers.includes(ans.ID)) {
+                    this.selectedCategory = ans;
+                }
+            })
+        })
+
     }
 
 }

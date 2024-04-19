@@ -33,6 +33,19 @@ namespace AngularTest1.Controllers
             return sfasdf;
         }
 
+        [HttpGet]
+        [Route("GetAnswers")]
+        public long[] GetAns()
+        {
+
+            var context = new CompliContext();
+
+            long[] sfasdf = context.Tasks.Where(t => t.IsAnswered != null && t.IsAnswered != 0).Select(y=> y.Id).ToArray();
+
+
+            return sfasdf;
+        }
+
         [Route("SaveAnswer")]
         [HttpPost]
         public ConsoleApp6.Models.Task[] Post(saveAns input)
